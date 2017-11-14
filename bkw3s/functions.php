@@ -52,3 +52,5 @@ if(function_exists('register_sidebar')) {
 
     add_action('widgets_init', 'bkw3s_register_sidebars');
 }
+
+add_theme_support( 'title-tag' );

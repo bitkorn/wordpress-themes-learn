@@ -11,7 +11,7 @@ get_header(); ?>
         <div class="w3-col l9 m9">
             <h4><?php single_cat_title() ?></h4>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <ul id="blogarchive">
+                <ul>
                     <li><?php the_time('d.m.Y'); ?> - <a href="<?php the_permalink(); ?>"
                                                          title="Lesen Sie &quot;<?php the_title(); ?>&quot;"><strong><?php the_title(); ?></strong></a>
                     </li>
