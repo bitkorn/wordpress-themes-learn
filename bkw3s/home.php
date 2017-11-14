@@ -12,14 +12,12 @@
             <?php dynamic_sidebar('BKw3s-Sidebar-Right'); ?>
         </div>
         <div class="w3-col l9 m9">
-<!--            --><?php //the_content() ?>
-
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="blog-post">
                     <span class="blog-post-date"><?php the_time("d.m.Y"); ?></span>
-                    <h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"
+                    <h4 class="blog-post-title"><a href="<?php the_permalink(); ?>"
                                                    title="Lesen Sie &quot;<?php the_title(); ?>&quot; vollständig"><?php the_title(); ?></a>
-                    </h2>
+                    </h4>
                     <?php the_content('Weiterlesen...'); ?>
                     <span class="blog-post-meta">Kategorie(n): <?php the_category(', '); ?>
                         | Autor: <?php echo get_the_author(); ?>
