@@ -20,3 +20,35 @@ function bkw3s_theme_stylesheets()
 }
 
 add_action( 'wp_enqueue_scripts', 'bkw3s_theme_stylesheets' );
+
+if(function_exists('register_sidebar')) {
+
+    /**
+     * Ändert man die ID einer Sidebar, sind keine Widgets mehr zugeordnet und im Backend sieht man nicht zugeordnete
+     * und die Sidebar ist leer.
+     */
+    function bkw3s_register_sidebars()
+    {
+        register_sidebar(array(
+            'id' => 'sidebar-right', // stellt die Beziehung zu widgets her
+            'name' => 'BKw3s-Sidebar-Right',
+            'description' => '',
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>',
+        ));
+        register_sidebar(array(
+            'id' => 'sidebar-left', // stellt die Beziehung zu widgets her
+            'name' => 'BKw3s-Sidebar-Left',
+            'description' => '',
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>',
+        ));
+
+    }
+
+    add_action('widgets_init', 'bkw3s_register_sidebars');
+}

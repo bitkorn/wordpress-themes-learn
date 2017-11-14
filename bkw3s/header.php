@@ -15,4 +15,11 @@
 </head>
 
 <body <?php body_class() ?>>
-<div id="page" class="">
+
+    <header class="w3-grey" style="height: 50px">
+        <div class="w3-center">
+            <a href="/">home</a>
+        </div>
+    </header>
+
+<div id="page" class="w3-container w3-padding">
