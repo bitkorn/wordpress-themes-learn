@@ -1,6 +1,6 @@
 ## Wordpress themes to learn and teach
-Hier entstehen unterschiedliche Themes von minimalistisch,
-einzig um etwas zu demonstrieren bis zu komplett, um es produktiv zu nutzen.
+Im Ramen meiner ehrenamtlichen Lehrveranstaltungen im [Computer Fan Club Hagen e.V.](http://www.cfc-hagen.de/)
+entstehen hier unterschiedliche Themes von minimalistisch -einzig um etwas zu demonstrieren- bis zu komplett, um es produktiv zu nutzen.
 
 Das Theme twentyseventeen wird vielleicht verändert.
 
